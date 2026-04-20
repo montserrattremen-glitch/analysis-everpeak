@@ -1,19 +1,47 @@
-# analysis-everpeak
-EverPeak Holdings es una empresa que SilverBasket Retail Group está incorporando a su portafolio de marcas a finales de 2024.
+# 📊 EverPeak Data Quality Analysis
 
-## Situación de Negocio
-**El Desafío:**
-- Antes de concretar la adquisición, el equipo de Estrategia e Integración debe revisar la calidad y estructura de los datos transaccionales de EverPeak
-- Este tipo de revisión es un paso regular en procesos de incorporación de empresas
+## 🧩 Project Overview
+EverPeak Holdings is a company that SilverBasket Retail Group plans to acquire by the end of 2024.  
 
-## Dataset EverPeak
-**Contenido:** 
-- 2,000 órdenes de clientes con problemas de calidad diseñados para simular datos reales del retail
-- Incluye valores faltantes, sentinels, outliers y problemas de calidad
+Before completing the acquisition, the Strategy & Integration team must evaluate the **quality and structure of EverPeak's transactional data** to ensure reliable decision-making.
 
-## Columnas principales:
-- order_id, customer_id (identificadores)
-- customer_age, quantity, order_value (numéricas)
-- product_category, city, state (categóricas)
-- order_date (fechas)
-- payment_method (métodos de pago)
+This project focuses on identifying and analyzing **data quality issues** in a retail dataset.
+
+---
+
+## 🎯 Problem Statement
+The dataset contains multiple data quality issues that can affect business insights, including:
+- Missing values  
+- Sentinel values  
+- Outliers  
+- Inconsistent data  
+
+The goal is to **clean, analyze, and extract insights** from the dataset to support the acquisition process.
+
+---
+
+## 📂 Dataset Description
+The dataset includes **2,000 customer orders** with simulated real-world data issues.
+
+### Key columns:
+- `order_id`, `customer_id` → Identifiers  
+- `customer_age`, `quantity`, `order_value` → Numerical variables  
+- `product_category`, `city`, `state` → Categorical variables  
+- `order_date` → Date  
+- `payment_method` → Payment type  
+
+---
+
+## 🛠️ Technologies Used
+- Python 🐍  
+- Pandas  
+- NumPy  
+- Matplotlib / Seaborn  
+- Jupyter Notebook  
+
+---
+
+## ⚙️ How to Run the Project
+1. Clone this repository:
+```bash
+git clone https://github.com/montserrattremen-glitch/analysis-everpeak.git
