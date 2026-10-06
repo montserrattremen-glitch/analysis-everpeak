@@ -1,34 +1,55 @@
 # 📊 EverPeak Data Quality Analysis
 
 ## 🧩 Project Overview
-EverPeak Holdings is a company that SilverBasket Retail Group plans to acquire by the end of 2024.  
+This project analyzes the relationship between urban mobility and economic productivity in major cities, using mobility data from the TomTom Traffic Index and economic indicators from OECD Cities. 
 
-Before completing the acquisition, the Strategy & Integration team must evaluate the **quality and structure of EverPeak's transactional data** to ensure reliable decision-making.
-
-This project focuses on identifying and analyzing **data quality issues** in a retail dataset.
+The objective is to explore whether traffic conditions and mobility performance are associated with differences in economic productivity across cities. 
 
 ---
 
 ## 🎯 Problem Statement
-The dataset contains multiple data quality issues that can affect business insights, including:
-- Missing values  
-- Sentinel values  
-- Outliers  
-- Inconsistent data  
-
-The goal is to **clean, analyze, and extract insights** from the dataset to support the acquisition process.
+The analysis focuses on:
+- Exploring and cleaning mobility and economic datasets.
+- Preparing and standardizing data for analysis.
+- Filtering the information for 2024.
+- Aggregating traffic indicators by city and country.
+- Combining mobility and economic data.
+- Analyzing relationships between traffic conditions and economic indicators.
+- Creating visualizations to identufy relevant patterns and differences between cities. 
 
 ---
 
-## 📂 Dataset Description
-The dataset includes **2,000 customer orders** with simulated real-world data issues.
+## 📂 Dataset Sources
+The project combines information from two main sources:
 
-### Key columns:
-- `order_id`, `customer_id` → Identifiers  
-- `customer_age`, `quantity`, `order_value` → Numerical variables  
-- `product_category`, `city`, `state` → Categorical variables  
-- `order_date` → Date  
-- `payment_method` → Payment type  
+### TomTom Traffic Index
+Provides information related to urban traffic and mobility, incluiding indicators such as:
+- Traffic congestion
+- Average travel time
+- Traffic delays
+- Jam-related indicators
+
+### OECD Cities
+Provides economic and demographic indicators for cities, allowing mobility conditions to be analyzed alongside measures of economic activity and productivity. 
+
+The analysis focuses on data corresponding to 2024. 
+
+---
+## 🔄 Analysis Workflow
+The project follows the following data-analysis workflow:
+1. Data loading
+2. Data exploration
+3. Data cleaning and preparation
+4. Year extraction and filtering
+5. Traffic data aggregation
+6. Data merging
+7. Exploratory analysis
+8. Data visualization
+9. Interpretation of results
+10. Export of the final cleaned dataset
+
+The final dataset es exported as: 
+ladb_mobility_economy_2024_clean.csv
 
 ---
 
@@ -36,12 +57,18 @@ The dataset includes **2,000 customer orders** with simulated real-world data is
 - Python 🐍  
 - Pandas  
 - NumPy  
-- Matplotlib / Seaborn  
+- Matplotlib / Seaborn
+- Seaborn
 - Jupyter Notebook  
 
 ---
 
-## ⚙️ How to Run the Project
-1. Clone this repository:
-```bash
-git clone https://github.com/montserrattremen-glitch/analysis-everpeak.git
+## 📈 Key Analysis
+The project examines differences in mobility conditions between cities and explores potential relationships between: 
+- Traffic congestion
+- Travel delays
+- Mobility performance
+- Economic productivity
+
+Visualizations such as boxplots, bar charts, and comparative analyses are used to identify patterns and support the interpretation of the data.
+
